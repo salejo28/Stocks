@@ -1,0 +1,162 @@
+{
+    "Actions": {
+        "Colombia": {
+            "1": {
+                "name": "Aval Acciones y Valores Pref",
+                "symbol": "GAA_p"
+            },
+            "2": {
+                "name": "Almacenes Exito",
+                "symbol": "IMI"
+            },
+            "3": {
+                "name": "Banco Bilbao Vizcaya Agentaria Colombia",
+                "symbol": "BGA"
+            },
+            "4": {
+                "name": "Grupo Argos",
+                "symbol": "ARG"
+            },
+            "5": {
+                "name": "Grupo Argos Pref",
+                "symbol": "ARG_p"
+            },
+            "6": {
+                "name": "Cementos Argos Pf",
+                "symbol": "CCB_p"
+            },
+            "7": {
+                "name": "Avianca Pf",
+                "symbol": "AVT_p"
+            },
+            "8": {
+                "name": "Banco Davivienda Pf",
+                "symbol": "DVI_p"
+            },
+            "9": {
+                "name": "Banco de Occidente SA",
+                "symbol": "BOC"
+            },
+            "10": {
+                "name": "Banco de Bogota",
+                "symbol": "BBO"
+            },
+            "11": {
+                "name": "BanColombia",
+                "symbol": "BIC"
+            },
+            "12": {
+                "name": "Bancolombia Pf",
+                "symbol": "BIC_p1"
+            },
+            "13": {
+                "name": "Grupo Energia Bogota",
+                "symbol": "GEB"
+            },
+            "14": {
+                "name": "Grupo Bolivar",
+                "symbol": "SCA"
+            },
+            "15": {
+                "name": "Bolsa de Valores de Colombia",
+                "symbol": "BVC"
+            },
+            "16": {
+                "name": "Canacol Energy",
+                "symbol": "CNE"
+            },
+            "17": {
+                "name": "Carton de Colombia",
+                "symbol": "CRT"
+            },
+            "18": {
+                "name": "Carvajal Empaques",
+                "symbol": "CAR_p"
+            },
+            "19": {
+                "name": "Celsia",
+                "symbol": "CEL"
+            },
+            "20": {
+                "name": "Cemargos",
+                "symbol": "CCB"
+            },
+            "21": {
+                "name": "Cemex Latam",
+                "symbol": "CLH"
+            },
+            "22": {
+                "name": "Enka de Colombia SA",
+                "symbol": "ENK"
+            },
+            "23": {
+                "name": "Corporacion Financiera Colombiana",
+                "symbol": "CFV_p"
+            },
+            "24": {
+                "name": "Colombiana",
+                "symbol": "CFV"
+            },
+            "25": {
+                "name": "Coltejer",
+                "symbol": "CTJ"
+            },
+            "26": {
+                "name": "Conconcret",
+                "symbol": "CIC"
+            },
+            "27": {
+                "name": "Construcciones el Condor SA",
+                "symbol": "CON"
+            },
+            "28": {
+                "name": "Ecopetrol",
+                "symbol": "ECO"
+            },
+            "29": {
+                "name": "Interconnection Electric",
+                "symbol": "ISA"
+            },
+            "30": {
+                "name": "Etb",
+                "symbol": "ETB"
+            },
+            "31": {
+                "name": "Fabricato SA",
+                "symbol": "FHT"
+            },
+            "32": {
+                "name": "Global X SuperDividend",
+                "symbol": "SDIV"
+            },
+            "33": {
+                "name": "Grupoaval",
+                "symbol": "GAA"
+            },
+            "34": {
+                "name": "Mineros SA",
+                "symbol": "MAS"
+            },
+            "35": {
+                "name": "Nutresa",
+                "symbol": "NCH"
+            },
+            "36": {
+                "name": "Organizacion Terpel SA",
+                "symbol": "TPL"
+            },
+            "37": {
+                "name": "Pfgruposura",
+                "symbol": "SIS_p"
+            },
+            "38": {
+                "name": "Promigas",
+                "symbol": "PMG"
+            },
+            "39": {
+                "name": "Suramericana",
+                "symbol": "SIS"
+            }
+        }
+    }
+}
