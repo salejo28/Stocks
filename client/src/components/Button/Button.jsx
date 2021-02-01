@@ -1,27 +1,61 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Redirect } from 'react-router-dom'
 
-import styles from './Button.module.css'
+//import styles from './Button.module.css'
 
-const ButtonRedirect = ({ text, to }) => {
+const ButtonForm = ({ text, disabled, styles }) => {
 
-    return(
-        <Link to={to} className={styles.linkBtn}>
+    if (disabled) {
+        return (
+            <button className={`${styles.btn_form} ${styles.btn_disabled}`} disabled={disabled}>
+                {text}
+            </button>
+        )
+    }
+
+    return (
+        <button className={styles.btn_form}>
             {text}
-        </Link>
+        </button>
     )
 
 }
 
-const Button = ({ text, type, to }) => {
+const ButtonNew = ({ to, styles }) => {
+    
+    const [redirect, setRedirect] = useState(false)
 
-    if (type === "Link") {
-        return(
-            <ButtonRedirect text={text} to={to} />
-        )
+    console.log(redirect)
+    const onClick = () => {
+        setRedirect(true)
     }
 
-    return <></>
+    const goToPage = () => {
+        if (redirect) {
+            return <Redirect to={to} />
+        }
+    }
+
+    return (
+        <button onClick={onClick} className={styles.btn_new}>
+            {goToPage()}
+            <i className="fas fa-plus"></i>
+        </button>
+    )
+
+}
+
+const Button = ({ text, disabled, type, styles, to }) => {
+
+    if (type === "form") {
+        return <ButtonForm text={text} disabled={disabled} styles={styles} />
+    }
+
+    if (type === 'new') {
+        return <ButtonNew to={to} styles={styles} />
+    }
+
+    <></>
 
 }
 

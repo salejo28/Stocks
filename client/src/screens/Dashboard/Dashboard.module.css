@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+}
+
+main {
+    width: 80%;
+    min-height: 100vh;
+    padding: 20px 30px;
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+main .chart {
+    width: 90%;
+    height: 300px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 10px 15px 30px 5px rgba(0, 0, 0, .5);
+    position: absolute;
+    padding: 5px;
+}
+
+main .info {
+    width: 90%;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+}
+
+main .info .info_1 {
+    width: 48%;
+    height: 250px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 10px 15px 30px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+main .info .info_2 {
+    width: 48%;
+    height: 250px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 10px 15px 30px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+main .info .info_1:hover {
+    transform: scale(1.03);
+}
+
+main .info .info_2:hover {
+    transform: scale(1.03);
+}

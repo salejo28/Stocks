@@ -1,0 +1,135 @@
+main {
+    width: 80%;
+    padding: 20px 40px;
+}
+
+main .section_table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 10px 15px 30px 5px  rgba(0, 0, 0, .5);
+    max-height: 500px;
+    padding: 15px 20px;
+    margin-top: 50px;
+}
+
+.btn_new {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    float: right;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    background: #242e42;
+    z-index: 1000;
+    transition: all .2s ease;
+}
+
+.btn_new i {
+    font-size: 20px;
+}
+
+.btn_new:hover {
+    background: #171d2b;
+    transform: scale(1.05);
+}
+
+/* Form new Stock */
+.content_form {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 500px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 10px 5px 30px 10px rgba(0, 0, 0, .5);
+    padding: 20px;
+}
+
+.content form {
+    width: 100%;
+    height: 100%;
+}
+
+.content form .group {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;    
+}
+
+.content form .group input{
+    width: 100%; 
+    position: relative;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: none;
+    border: 1px solid #222222;
+    color: #171d2b;
+    outline: none;
+    margin-top: 35px;
+}
+
+.content form .group label {
+    position: absolute;
+    font-weight: 500;
+    color: #181818;
+    font-size: 20px;
+}
+
+.content form .group_flex {
+    display: flex;
+}
+
+.content form .group_btns{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content form .group_btns .btn_form,
+.content form .group_btns .btn_cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.content form .group_btns .btn_form {
+    background: #242e42;
+}
+
+.content form .group_btns .btn_cancel {
+    background: #b12121;
+}
+
+.content form .group_btns .btn_cancel i {
+    margin-right: 5px;
+}
+
+.content form .group_btns .btn_form:hover {
+    background: #131a27;
+}
+
+.content form .group_btns .btn_cancel:hover {
+    background: #941b1b;
+}

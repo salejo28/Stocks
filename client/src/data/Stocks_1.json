@@ -1,0 +1,114 @@
+{
+    "Stocks": {
+        "1": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "2": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "3": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "4": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "5": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "6": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "7": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "8": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "9": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        },
+        "10": {
+            "ticker": "GAA_p",
+            "sector": "Banco",
+            "compañia": "Aval Acciones y Valores Pref",
+            "nacciones": "1.000",
+            "fecha": "13/4/2020",
+            "precio": "3.500",
+            "Invinicial": "5.456.000",
+            "Invfinal": "4.000",
+            "Invactual": "7.312.000"
+        }
+    }
+}

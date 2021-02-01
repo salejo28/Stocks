@@ -45,7 +45,7 @@ CREATE TABLE actions_users(
     brokerage VARCHAR(60) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     user_id INT(11)
-)
+);
 
 ALTER TABLE actions_users
     ADD PRIMARY KEY (id);

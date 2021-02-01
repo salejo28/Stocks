@@ -1,0 +1,34 @@
+{
+    "Stocks": {
+        "0": {
+            "name": "Bancolombia",
+            "symbol": "BCC",
+            "percent": [4.5, 3.5, 4.2, 1.2, 5.0],
+            "time": [10, 20, 30, 40, 50]
+        },
+        "1": {
+            "name": "Bavaria",
+            "symbol": "BVV",
+            "percent": [4.2, 2.5, 1.2, 6.2, 4.0],
+            "time": [10, 20, 30, 40, 50]
+        },
+        "2": {
+            "name": "Argos",
+            "symbol": "ARG",
+            "percent": [4.5, 5.5, 6.2, 1.7, 3.0],
+            "time": [10, 20, 30, 40, 50]
+        },
+        "3": {
+            "name": "Bolsa",
+            "symbol": "BBB",
+            "percent": [6.5, 1.5, 6.2, 8.2, 9.0],
+            "time": [10, 20, 30, 40, 50]
+        },
+        "4": {
+            "name": "Bancobogota",
+            "symbol": "BCB",
+            "percent": [1.5, 4.5, 3.2, 2.2, 1.0],
+            "time": [10, 20, 30, 40, 50]
+        }
+    }
+}
