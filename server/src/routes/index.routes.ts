@@ -1,10 +1,13 @@
 import { UserRoutes } from './users.routes'
-import { Actions } from './actions.routes'
+import { Trade } from './trade.routes'
+import { Stock } from './stock.routes'
 
 const userRoutes: any = new UserRoutes().router
-const actionsRoutes: any = new Actions().router
+const trade: any = new Trade().router
+const stock: any = new Stock().router
 
 export default {
     userRoutes,
-    actionsRoutes
+    trade,
+    stock
 }

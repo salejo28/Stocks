@@ -22,10 +22,10 @@ const ButtonForm = ({ text, disabled, styles }) => {
 }
 
 const ButtonNew = ({ to, styles }) => {
-    
+
     const [redirect, setRedirect] = useState(false)
 
-    console.log(redirect)
+
     const onClick = () => {
         setRedirect(true)
     }

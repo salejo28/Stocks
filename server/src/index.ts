@@ -1,5 +1,5 @@
 import { App } from './App'
-import { saveActions } from './middlewares/Actions'
+import { saveActions } from './middlewares/Stocks'
 
 async function main() {
     const app = new App(4000)

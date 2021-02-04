@@ -1,4 +1,4 @@
-CREATE DATABASE Dashboard_Actions;
+CREATE DATABASE Stocks_Dashboard;
 
 USE Dashboard_Actions;
 
@@ -21,36 +21,40 @@ ALTER TABLE users
 DESCRIBE users;
 
 -- Table Actions Colombia
-CREATE TABLE actions(
+CREATE TABLE stocks(
     id INT(11) NOT NULL,
-    name VARCHAR(50) NOT NULL,
-    symbol VARCHAR(6) NOT NULL
+    company VARCHAR(50) NOT NULL,
+    ticker VARCHAR(6) NOT NULL,
+    sector VARCHAR(20) NOT NULL
 );
 
-ALTER TABLE actions 
+ALTER TABLE stocks 
     ADD PRIMARY KEY (id);
 
-ALTER TABLE actions
+ALTER TABLE stocks
     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
-DESCRIBE actions;
+DESCRIBE stocks;
 
--- table actions_users
-CREATE TABLE actions_users(
+-- table trade
+CREATE TABLE trade(
     id INT(11) NOT NULL,
-    name VARCHAR(50) NOT NULL,
-    date_trade DATE NOT NULL,
+    company VARCHAR(50) NOT NULL,
+    date_trade VARCHAR(10) NOT NULL,
     quantity VARCHAR(40) NOT NULL,
-    price VARCHAR(100) NOT NULL,
+    unit_price VARCHAR(100) NOT NULL,
     brokerage VARCHAR(60) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    user_id INT(11)
+    color VARCHAR(20) NOT NULL,
+    total VARCHAR(100),
+    user_id INT(11),
+    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-ALTER TABLE actions_users
+ALTER TABLE trade
     ADD PRIMARY KEY (id);
 
-ALTER TABLE actions_users
+ALTER TABLE trade
     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
-DESCRIBE actions_users;
+DESCRIBE trade;

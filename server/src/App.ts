@@ -1,5 +1,6 @@
 import express from 'express'
 import morgan from 'morgan'
+import cors from 'cors'
 
 // Routes
 import routes from './routes/index.routes'
@@ -24,11 +25,13 @@ export class App {
         this.app.use(morgan('dev'))
         this.app.use(express.json())
         this.app.use(express.urlencoded({ extended: true }))
+        this.app.use(cors())
     }
 
     Routes() {
         this.app.use('/users', routes.userRoutes)
-        this.app.use('/actions', routes.actionsRoutes)
+        this.app.use('/trade', routes.trade)
+        this.app.use('/stock', routes.stock)
     }
 
     async listen() {

@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+.container .Alert {
+    position: relative;
+    top: -200px;
+    z-index: 10000;
+}
+
 .form_content {
     position: absolute;
     width: 400px;
@@ -86,7 +92,7 @@ form .field_group input {
     background: none;
     border: none;
     outline: none;
-    width: 70%;
+    width: 80%;
     height: 100%;
     font-size: 20px;
     color: #252525;
@@ -96,6 +102,10 @@ form .field_group input {
 
 form .field_group input:focus {
     border-bottom: 1px solid #2a9d8f;
+}
+
+form .field_group small {
+    color: #d42020;
 }
 
 form .btn_form {

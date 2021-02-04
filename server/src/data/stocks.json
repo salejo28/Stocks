@@ -1,0 +1,201 @@
+{
+    "Actions": {
+        "Colombia": {
+            "1": {
+                "company": "Aval Acciones y Valores Pref",
+                "ticker": "GAA_p",
+                "sector": "Bank"
+            },
+            "2": {
+                "company": "Almacenes Exito",
+                "ticker": "IMI",
+                "sector": "Retail"
+            },
+            "3": {
+                "company": "Banco Bilbao Vizcaya Agentaria Colombia",
+                "ticker": "BGA",
+                "sector": "Bank"
+            },
+            "4": {
+                "company": "Grupo Argos",
+                "ticker": "ARG",
+                "sector": "Energy and Cements"
+            },
+            "5": {
+                "company": "Grupo Argos Pref",
+                "ticker": "ARG_p",
+                "sector": "Energy and Cements"
+            },
+            "6": {
+                "company": "Cementos Argos Pf",
+                "ticker": "CCB_p",
+                "sector": "Energy and Cements"
+            },
+            "7": {
+                "company": "Avianca Pf",
+                "ticker": "AVT_p",
+                "sector": "Aeronautics"
+            },
+            "8": {
+                "company": "Banco Davivienda Pf",
+                "ticker": "DVI_p",
+                "sector": "Bank"
+            },
+            "9": {
+                "company": "Banco de Occidente SA",
+                "ticker": "BOC",
+                "sector": "Bank"
+            },
+            "10": {
+                "company": "Banco de Bogota",
+                "ticker": "BBO",
+                "sector": "Bank"
+            },
+            "11": {
+                "company": "BanColombia",
+                "ticker": "BIC",
+                "sector": "Bank"
+            },
+            "12": {
+                "company": "Bancolombia Pf",
+                "ticker": "BIC_p1",
+                "sector": "Bank"
+            },
+            "13": {
+                "company": "Grupo Energia Bogota",
+                "ticker": "GEB",
+                "sector": "Energy"
+            },
+            "14": {
+                "company": "Grupo Bolivar",
+                "ticker": "SCA",
+                "sector": "Construction"
+            },
+            "15": {
+                "company": "Bolsa de Valores de Colombia",
+                "ticker": "BVC",
+                "sector": "Holding"
+            },
+            "16": {
+                "company": "Canacol Energy",
+                "ticker": "CNE",
+                "sector": "Energy"
+            },
+            "17": {
+                "company": "Carton de Colombia",
+                "ticker": "CRT",
+                "sector": "Stationer"
+            },
+            "18": {
+                "company": "Carvajal Empaques",
+                "ticker": "CAR_p",
+                "sector": "Holding"
+            },
+            "19": {
+                "company": "Celsia",
+                "ticker": "CEL",
+                "sector": "Energy"
+            },
+            "20": {
+                "company": "Cemargos",
+                "ticker": "CCB",
+                "sector": "Industrial"
+            },
+            "21": {
+                "company": "Cemex Latam",
+                "ticker": "CLH",
+                "sector": "Construction"
+            },
+            "22": {
+                "company": "Enka de Colombia SA",
+                "ticker": "ENK",
+                "sector": "Holding"
+            },
+            "23": {
+                "company": "Corporacion Financiera Colombiana",
+                "ticker": "CFV_p",
+                "sector": "Bank"
+            },
+            "24": {
+                "company": "Colombiana",
+                "ticker": "CFV",
+                "sector": "Agricultural"
+            },
+            "25": {
+                "company": "Coltejer",
+                "ticker": "CTJ",
+                "sector": "Retail"
+            },
+            "26": {
+                "company": "Conconcret",
+                "ticker": "CIC",
+                "sector": "Construction"
+            },
+            "27": {
+                "company": "Construcciones el Condor SA",
+                "ticker": "CON",
+                "sector": "Construction"
+            },
+            "28": {
+                "company": "Ecopetrol",
+                "ticker": "ECO",
+                "sector": "Oil"
+            },
+            "29": {
+                "company": "Interconnection Electric",
+                "ticker": "ISA",
+                "sector": "Energy"
+            },
+            "30": {
+                "company": "Etb",
+                "ticker": "ETB",
+                "sector": "Tech"
+            },
+            "31": {
+                "company": "Fabricato SA",
+                "ticker": "FHT",
+                "sector": "Holding"
+            },
+            "32": {
+                "company": "Global X SuperDividend",
+                "ticker": "SDIV",
+                "sector": "Holding"
+            },
+            "33": {
+                "company": "Grupoaval",
+                "ticker": "GAA",
+                "sector": "Bank"
+            },
+            "34": {
+                "company": "Mineros SA",
+                "ticker": "MAS",
+                "sector": "Mining"
+            },
+            "35": {
+                "company": "Nutresa",
+                "ticker": "NCH",
+                "sector": "Eating"
+            },
+            "36": {
+                "company": "Organizacion Terpel SA",
+                "ticker": "TPL",
+                "sector": "Oil"
+            },
+            "37": {
+                "company": "Pfgruposura",
+                "ticker": "SIS_p",
+                "sector": "Bank"
+            },
+            "38": {
+                "company": "Promigas",
+                "ticker": "PMG",
+                "sector": "Gas"
+            },
+            "39": {
+                "company": "Suramericana",
+                "ticker": "SIS",
+                "sector": "Bank"
+            }
+        }
+    }
+}

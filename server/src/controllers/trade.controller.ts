@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 
 import { connect } from '../Database'
 
-export class ActionCntroller {
+export class TradeController {
 
     async getAction(req: Request, res: Response): Promise<Response> {
 

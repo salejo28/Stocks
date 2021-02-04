@@ -1,33 +1,26 @@
-export function validateLogin(data) {
+export function validRegister(args) {
 
-    let errors = {}
+    const argsLength = Object.keys(args).length === 0
 
-    if (!data) {
-        errors.message = 'Completa todos los campos'
-        errors.path = ['email', 'password']
+    if (argsLength) {
+        return false
     }
 
-    if (!data.email) {
-        errors.message = 'Complete este campo'
-        errors.path = ['email']
-    } else {
-        const validEmail = validateEmail(data.email)
-
-        if (!validEmail) {
-            errors.message = 'Email invalido'
-            errors.path = ['email']
-        }
+    if (!args.fullname || !args.username || !args.email || !args.password || !args.confirmPassword) {
+        return false
     }
 
-    if (!data.password) {
-        errors.message = 'Complete este campo'
-        errors.path = ['password']
+    return true
+
+}
+
+export function matchPasswords(args) {
+    
+    if (args.password !== args.confirmPassword) {
+        return false
     }
 
-    return {
-        errors,
-        valid: Object.keys(errors).length < 1
-    }
+    return true
 
 }
 

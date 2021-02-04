@@ -12,7 +12,7 @@ import NewStock from './screens/Stocks/newStock'
 export default class App extends React.Component {
 
     render() {
-        return(
+        return (
             <div>
                 <Router>
                     <Switch>
