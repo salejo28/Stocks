@@ -2,13 +2,9 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 
 
-async function getDataScraping() {
-    const AxiosInstance = axios.create()
-    let data
-    AxiosInstance.get('')
-        .then(res => {
-            const html = res.data
-            const $ = cheerio.load(html)
-        })
-        .catch(console.error)
+export async function getValueToday() {
+    const res = await axios.get('https://www.investing.com/stock-screener/?sp=country::122|sector::a|industry::a|equityType::a|exchange::55%3Ceq_market_cap;1')
+    const $ = cheerio.load(res.data)
+    const table = $('td')
+    console.log(table.html())
 }
