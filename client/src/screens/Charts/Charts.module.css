@@ -5,6 +5,18 @@
     overflow: hidden;
 }
 
+/* Loading Content */
+.loading_content {
+    width: 80%;
+    min-height: 100vh;
+    padding: 20px 30px;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .content_btn {
     position: relative;
     width: 80%;

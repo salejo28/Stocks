@@ -40,13 +40,16 @@ DESCRIBE stocks;
 CREATE TABLE trade(
     id INT(11) NOT NULL,
     company VARCHAR(50) NOT NULL,
-    date_trade VARCHAR(10) NOT NULL,
+    ticker VARCHAR(10) NOT NULL,
+    sector VARCHAR(30) NOT NULL,
+    date_trade VARCHAR(70) NOT NULL,
     quantity VARCHAR(40) NOT NULL,
     unit_price VARCHAR(100) NOT NULL,
     brokerage VARCHAR(60) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    color VARCHAR(20) NOT NULL,
+    color VARCHAR(50) NOT NULL,
     total VARCHAR(100),
+    sold BOOLEAN NOT NULL,
     user_id INT(11),
     CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id)
 );
@@ -56,5 +59,8 @@ ALTER TABLE trade
 
 ALTER TABLE trade
     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+ALTER TABLE trade
+    ADD actual_value VARCHAR(20);
 
 DESCRIBE trade;

@@ -12,6 +12,10 @@ class User {
         return await axios.post(this.URI + '/users/signin', data)
     }
 
+    async getUser(token) {
+        return await axios.get(this.URI + '/users/getUser', { headers: { "x-token": token } })
+    }
+
 }
 
 export default User

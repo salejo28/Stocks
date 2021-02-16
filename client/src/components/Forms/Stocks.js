@@ -4,13 +4,17 @@ import { Link } from 'react-router-dom'
 // Componets
 import Button from '../Button/Button'
 import DatePicker from 'react-datepicker'
+import List from '../List/List'
 
 // Helpers
-import { onlyNumber } from '../../utils/OnlyNumber'
-import { randomColor } from '../../utils/Color'
+import { onlyNumber, randomColor } from '../../utils/StocksUtils'
 
 // styles
 import 'react-datepicker/dist/react-datepicker.css'
+
+// Api
+import StockApi from '../../api/Stock'
+import TradeApi from '../../api/Trade'
 
 export default class StocksForm extends React.Component {
 
@@ -23,7 +27,9 @@ export default class StocksForm extends React.Component {
             showDatePicker: false,
             loading: true,
             selectedDate: '',
-            pasted: false
+            pasted: false,
+            showListSearch: null,
+            stocks: null
         }
 
         this.onChangeDate = this.onChangeDate.bind(this)
@@ -52,11 +58,17 @@ export default class StocksForm extends React.Component {
     }
 
     onChange(input) {
-        let { data, pasted } = this.state
+        let { data, pasted, showListSearch } = this.state
         const { name, value } = input.target
 
         if (name === "company") {
-
+            this.search(value)
+            if (value === "") {
+                showListSearch = false
+                this.setState({
+                    showListSearch
+                })
+            }
         }
 
         if (!pasted) {
@@ -65,9 +77,35 @@ export default class StocksForm extends React.Component {
             this.setState({
                 data
             })
-        } 
+        }
         this.setState({
             pasted: false
+        })
+    }
+
+    async search(value) {
+        let { showListSearch, stocks } = this.state
+        const token = localStorage.getItem('token')
+        const res = await new StockApi().Search(value, token)
+
+        const { success } = res.data
+        if (success) {
+            stocks = res.data.stock
+            showListSearch = true
+            this.setState({
+                showListSearch,
+                stocks
+            })
+        }
+    }
+
+    onClickList(e, value) {
+        let { data, showListSearch } = this.state
+        data['company'] = value
+        showListSearch = false
+        this.setState({
+            value,
+            showListSearch
         })
     }
 
@@ -79,17 +117,23 @@ export default class StocksForm extends React.Component {
 
     }
 
-    onSubmit(e, args) {
+    async onSubmit(e, args) {
         e.preventDefault()
         args['color'] = randomColor()
         console.log(args)
+        const token = localStorage.getItem('token')
+        const res = await new TradeApi().createTrade(args, token)
+        const { success } = res.data
+        if (success) {
+            e.target.reset()
+            this.props.history.push('/dashboard/stocks')
+        }
 
-        e.target.reset()
     }
 
     render() {
         const styles = this.props.styles
-        const { loading, selectedDate, data } = this.state
+        const { loading, selectedDate, data, stocks, showListSearch } = this.state
         const date = new Date()
 
         if (loading) {
@@ -104,21 +148,32 @@ export default class StocksForm extends React.Component {
                             type="text"
                             name="company"
                             placeholder="Ej: ARG o Grupo Argos"
+                            autoComplete="off"
                             id="input_search"
                             onChange={this.onChange}
                             onPaste={this.handlePaste}
                             value={data.company ? data.company : ''}
                         />
+                        {
+                            showListSearch
+                                ? (
+                                    <div className={styles.content_list}>
+                                        <List data={stocks} styles={styles} onClick={this.onClickList.bind(this)} />
+                                    </div>
+                                )
+                                : <></>
+                        }
                     </div>
                     <div className={styles.group}>
                         <label htmlFor="">Fecha del Comercio</label>
                         <DatePicker
                             selected={selectedDate}
                             className={styles.input_datepicker}
+                            autoComplete="off"
                             placeholderText={date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear()}
                             name="date_trade"
                             dateFormat="MM/dd/yyyy"
-                            onChange={this.onChangeDate}                   
+                            onChange={this.onChangeDate}
                         />
                     </div>
                     <div className={styles.group}>
@@ -129,6 +184,7 @@ export default class StocksForm extends React.Component {
                             placeholder="Ej: 123"
                             onChange={this.onChange}
                             onKeyPress={e => onlyNumber(e)}
+                            autoComplete="off"
                             onPaste={this.handlePaste}
                             value={data.quantity ? data.quantity : ''}
                         />
@@ -138,6 +194,7 @@ export default class StocksForm extends React.Component {
                         <input
                             type="text"
                             placeholder="Ej: 123"
+                            autoComplete="off"
                             name="unit_price"
                             onChange={this.onChange}
                             onKeyPress={e => onlyNumber(e)}
@@ -151,6 +208,7 @@ export default class StocksForm extends React.Component {
                             type="text"
                             name="brokerage"
                             placeholder="Ej: 123"
+                            autoComplete="off"
                             onChange={this.onChange}
                             onKeyPress={e => onlyNumber(e)}
                             onPaste={this.handlePaste}

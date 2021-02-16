@@ -31,7 +31,7 @@ export class App {
     Routes() {
         this.app.use('/users', routes.userRoutes)
         this.app.use('/trade', routes.trade)
-        this.app.use('/stock', routes.stock)
+        this.app.use('/stocks', routes.stock)
     }
 
     async listen() {

@@ -45,7 +45,7 @@ const ButtonNew = ({ to, styles }) => {
 
 }
 
-const Button = ({ text, disabled, type, styles, to }) => {
+const Button = ({ text, disabled, type, styles, to, onClick }) => {
 
     if (type === "form") {
         return <ButtonForm text={text} disabled={disabled} styles={styles} />
@@ -55,7 +55,11 @@ const Button = ({ text, disabled, type, styles, to }) => {
         return <ButtonNew to={to} styles={styles} />
     }
 
-    <></>
+    return(
+        <button className={styles.btn} disabled={disabled} onClick={onClick}>
+            {text}
+        </button>
+    )
 
 }
 

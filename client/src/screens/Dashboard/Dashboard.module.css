@@ -32,6 +32,18 @@
     background-color: #1e3c47;
 }
 
+/* Loading Content */
+.loading_content {
+    width: 80%;
+    min-height: 100vh;
+    padding: 20px 30px;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main {
     width: 80%;
     min-height: 100vh;

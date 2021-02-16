@@ -1,16 +1,18 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom'
 
 // Styles
 import styles from './Table.module.css'
 
-const Table = ({ data }) => {
+// Helpers
+import { formatDate, formatPrice } from '../../utils/StocksUtils'
 
+const Table = (props) => {
 
     const onClick = (e) => {
-        console.log(e.target.parentElement)
+        const { id } = e.target.parentElement
+        const stock = e.target.parentElement.childNodes[2].firstChild.data
+        props.history.push(`/dashboard/stocks/${id}?stock=${stock}`)
     }
-
 
     return (
         <div className={styles.content_table}>
@@ -48,18 +50,18 @@ const Table = ({ data }) => {
                 </thead>
                 <tbody>
                     {
-                        data.map(stock => {
+                        props.data.map(trade => {
                             return (
-                                <tr key={stock.ticker} onClick={e => onClick(e)}>
-                                    <td>{stock.ticker}</td>
-                                    <td>{stock.sector}</td>
-                                    <td>{stock.compañia}</td>
-                                    <td>{stock.nacciones}</td>
-                                    <td>{stock.fecha}</td>
-                                    <td>{stock.precio}</td>
-                                    <td>{stock.Invinivial}</td>
-                                    <td>{stock.Invfinal}</td>
-                                    <td>{stock.Invactual}</td>
+                                <tr key={trade.id} onClick={e => onClick(e)} id={trade.id}>
+                                    <td>{trade.ticker}</td>
+                                    <td>{trade.sector}</td>
+                                    <td>{trade.company}</td>
+                                    <td>{trade.quantity}</td>
+                                    <td>{formatDate(trade.date_trade)}</td>
+                                    <td>{formatPrice(trade.unit_price)}</td>
+                                    <td>{formatPrice(trade.total)}</td>
+                                    <td>{trade.Invfinal}</td>
+                                    <td>{trade.Invactual}</td>
                                 </tr>
                             )
                         })

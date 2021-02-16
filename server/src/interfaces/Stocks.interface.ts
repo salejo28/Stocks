@@ -1,11 +1,15 @@
 export interface Trade {
     company: string
+    ticker: string
+    sector: Sector
     date_trade: string
     unit_price: string | number
     color: string
-    quanity: string | number
+    quantity: string | number
+    sold: string | boolean
     total: string | number
     brokerage: string | number
+    user_id: string | number
 }
 
 export interface Stock {

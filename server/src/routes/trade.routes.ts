@@ -12,31 +12,31 @@ export class Trade {
         this.router = Router()
         this.controller = new TradeController()
 
-        this.createAction()
-        this.getAction()
-        this.getActions()
-        this.deleteAction()
-        this.updateAction()
+        this.createTrade()
+        this.getTrade()
+        this.getTrades()
+        this.deleteTrade()
+        this.updateTrade()
     }
 
-    createAction() {
-        this.router.post('/create', auth, this.controller.createAction)
+    createTrade() {
+        this.router.post('/create', auth, this.controller.createTrade)
     }
 
-    getAction() {
-        this.router.get('/getstock/:id', auth, this.controller.getAction)
+    getTrade() {
+        this.router.get('/getstock/:id', auth, this.controller.getTrade)
     }
 
-    getActions() {
-        this.router.get('/getstocks', auth, this.controller.getActions)
+    getTrades() {
+        this.router.get('/getstocks', auth, this.controller.getTrades)
     }
 
-    deleteAction() {
-        this.router.delete('/delete/:id', auth, this.controller.deleteAction)
+    deleteTrade() {
+        this.router.delete('/delete/:id', auth, this.controller.deleteTrade)
     }
 
-    updateAction() {
-        this.router.put('/edit', auth, this.controller.updateAction)
+    updateTrade() {
+        this.router.put('/edit/:id', auth, this.controller.updateTrade)
     }
 
 }

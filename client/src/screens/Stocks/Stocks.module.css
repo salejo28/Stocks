@@ -34,7 +34,12 @@
 
 main {
     width: 80%;
+    min-height: 100vh;
     padding: 20px 40px;
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
 }
 
 main .section_table {
@@ -70,6 +75,77 @@ main .section_table {
 .btn_new:hover {
     background: #171d2b;
     transform: scale(1.05);
+}
+
+/* Loading Content */
+.loading_content {
+    width: 80%;
+    min-height: 100vh;
+    padding: 20px 30px;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page only Stock */
+main .chart {
+    width: 90%;
+    height: 300px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 10px 15px 30px 5px rgba(0, 0, 0, .5);
+    position: absolute;
+    padding: 5px;
+}
+
+main .info_content {
+    width: 90%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+main .info_content div {
+    width: 48%;
+    height: 250px;
+    padding: 0 10px;
+}
+
+main .info_content div .info_stock {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+main .info_content div .info_stock h2 {
+    font-size: 20px;
+    color: #181818;
+}
+
+main .info_content div .info_stock h4 {
+    font-size: 20px;
+    color: #222222;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+main .info_content div .info_stock .btn {
+    width: 40%;
+    height: 90%;
+    background-color: #118ab2;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+main .info_content div .info_stock .btn:hover {
+    background-color: #0e6b8a;
 }
 
 /* Form new Stock */
@@ -166,4 +242,43 @@ main .section_table {
 
 .content form .group_btns .btn_cancel:hover {
     background: #941b1b;
+}
+
+/* List form stocks */
+.content_list {
+    width: 450px;
+    min-height: auto;
+    max-height: 200px;
+    padding: 5px 7px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, .5);
+    overflow: auto;
+    z-index: 100;
+}
+
+.content_list .list {
+    width: 100%;
+}
+
+.content_list .list .list_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #252525;
+    transition: all .4s ease;
+}
+
+.content_list .list .list_item span {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.content_list .list .list_item:hover {
+    background-color: #ccc;
 }

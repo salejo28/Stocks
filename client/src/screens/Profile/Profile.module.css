@@ -1,0 +1,114 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* Loading Content */
+.loading_content {
+    width: 80%;
+    min-height: 100vh;
+    padding: 20px 30px;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_profile {
+    width: 80%;
+    position: relative;
+    float: right;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.content_profile section {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.content_profile section button {
+    float: right;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #1ec979;
+    color: #fff;
+    font-size: 17px;
+    transition: all .5s ease;
+}
+
+.content_profile section button:hover {
+    background-color: #15b168;
+}
+
+.content_profile section div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin: 20px 0;
+    border-bottom: 1px solid #bebebe;
+}
+
+.content_profile section div span {
+    position: absolute;
+    font-size: 20px;
+    color: #161616;
+    width: 70%;
+}
+
+.content_profile section div input {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    border: none;
+    padding: 0 5px;
+    outline: none;
+    font-size: 20px;
+    color: #414141;
+}
+
+.content_profile section div label {
+    position: relative;
+    top: -25px;
+    font-size: 14px;
+    color: #264653;
+}
+
+.content_profile section div i {
+    position: absolute;
+    margin-left: 320px;
+    font-size: 20px;
+    color: #14252c;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.content_profile section div i:hover{
+    color: #0d191f;
+}
+
+.content_profile section div button {
+    width: 100%;
+    height: 80%;
+    color: #fff;
+    font-size: 20px;
+    background-color: #14252c;
+    border-radius: 4px;
+    transition: all .5s ease;
+}
+
+.content_profile section div button:hover {
+    background-color: #0f1c22;
+}

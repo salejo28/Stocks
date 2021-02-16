@@ -78,11 +78,13 @@ export default class Form extends React.Component {
                 showAlert
             })
         } else {
+            localStorage.setItem('token', res.data.token)
             e.target.reset()
             args = {}
             this.setState({
                 args
             })
+            this.props.isAuth()
             this.props.history.push('/dashboard')
         }
 
@@ -108,6 +110,7 @@ export default class Form extends React.Component {
             this.setState({
                 args
             })
+            this.props.isAuth()
             this.props.history.push('/dashboard')
         }
 

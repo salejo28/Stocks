@@ -101,7 +101,7 @@ export default class Register extends React.Component {
         const valid = validRegister(args)
         return (
             <div>
-                <form onSubmit={e => this.onSubmit(e, args)}>
+                <form onSubmit={e => this.props.onSubmit(e, args)}>
                     <h3>Registrarse</h3>
                     <fieldset className={styles.field_group}>
                         <i className="fas fa-signature"></i>
