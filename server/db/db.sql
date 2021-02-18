@@ -1,6 +1,6 @@
 CREATE DATABASE Stocks_Dashboard;
 
-USE Dashboard_Actions;
+USE Stocks_Dashboard;
 
 -- Table Users
 CREATE TABLE users(
@@ -24,7 +24,7 @@ DESCRIBE users;
 CREATE TABLE stocks(
     id INT(11) NOT NULL,
     company VARCHAR(50) NOT NULL,
-    ticker VARCHAR(6) NOT NULL,
+    ticker VARCHAR(20) NOT NULL,
     sector VARCHAR(20) NOT NULL
 );
 

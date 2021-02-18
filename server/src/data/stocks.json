@@ -2,199 +2,169 @@
     "Actions": {
         "Colombia": {
             "1": {
-                "company": "Aval Acciones y Valores Pref",
-                "ticker": "GAA_p",
-                "sector": "Bank"
+                "company": "ICOLCAP",
+                "ticker": "ICOLCAP",
+                "sector": "Holding"
             },
             "2": {
-                "company": "Almacenes Exito",
-                "ticker": "IMI",
-                "sector": "Retail"
+                "company": "Ecopetrol",
+                "ticker": "ECOPETROL",
+                "sector": "Oil"
             },
             "3": {
-                "company": "Banco Bilbao Vizcaya Agentaria Colombia",
-                "ticker": "BGA",
-                "sector": "Bank"
-            },
-            "4": {
-                "company": "Grupo Argos",
-                "ticker": "ARG",
+                "company": "Cementos Argos (P)",
+                "ticker": "PFCEMARGOS",
                 "sector": "Energy and Cements"
             },
+            "4": {
+                "company": "Grupo Aval (P)",
+                "ticker": "PFAVAL",
+                "sector": "Bank"
+            },
             "5": {
-                "company": "Grupo Argos Pref",
-                "ticker": "ARG_p",
+                "company": "Grupo Argos",
+                "ticker": "GRUPOARGOS",
                 "sector": "Energy and Cements"
             },
             "6": {
-                "company": "Cementos Argos Pf",
-                "ticker": "CCB_p",
-                "sector": "Energy and Cements"
+                "company": "Bancolombia (P)",
+                "ticker": "PFBCOLOM",
+                "sector": "Bank"
             },
             "7": {
-                "company": "Avianca Pf",
-                "ticker": "AVT_p",
-                "sector": "Aeronautics"
+                "company": "Gruposura",
+                "ticker": "GRUPOSURA",
+                "sector": "Bank"
             },
             "8": {
-                "company": "Banco Davivienda Pf",
-                "ticker": "DVI_p",
-                "sector": "Bank"
+                "company": "Corficolombiana",
+                "ticker": "CORFICOLF",
+                "sector": "Holding"
             },
             "9": {
-                "company": "Banco de Occidente SA",
-                "ticker": "BOC",
-                "sector": "Bank"
+                "company": "Cementos Argos",
+                "ticker": "CEMARGOS",
+                "sector": "Energy and Cements"
             },
             "10": {
-                "company": "Banco de Bogota",
-                "ticker": "BBO",
-                "sector": "Bank"
+                "company": "Canacol",
+                "ticker": "CNEC",
+                "sector": "Energy"
             },
             "11": {
-                "company": "BanColombia",
-                "ticker": "BIC",
-                "sector": "Bank"
+                "company": "Mineros de Antioquia",
+                "ticker": "MINEROS",
+                "sector": "Mining"
             },
             "12": {
-                "company": "Bancolombia Pf",
-                "ticker": "BIC_p1",
-                "sector": "Bank"
+                "company": "Nutresa",
+                "ticker": "NUTRESA",
+                "sector": "Eating"
             },
             "13": {
-                "company": "Grupo Energia Bogota",
+                "company": "Grupo Argos (P)",
+                "ticker": "PFGRUPOARG",
+                "sector": "Energy and Cements"
+            },
+            "14": {
+                "company": "Bancolombia",
+                "ticker": "BCOLOMBIA",
+                "sector": "Bank"
+            },
+            "15": {
+                "company": "Construcciones El Cóndor",
+                "ticker": "ELCONDOR",
+                "sector": "Construction"
+            },
+            "16": {
+                "company": "Empresa de Energía de Bogotá",
                 "ticker": "GEB",
                 "sector": "Energy"
             },
-            "14": {
-                "company": "Grupo Bolivar",
-                "ticker": "SCA",
-                "sector": "Construction"
+            "17": {
+                "company": "Interconexión Eléctrica S.A",
+                "ticker": "ISA",
+                "sector": "Energy"
             },
-            "15": {
+            "18": {
                 "company": "Bolsa de Valores de Colombia",
                 "ticker": "BVC",
                 "sector": "Holding"
             },
-            "16": {
-                "company": "Canacol Energy",
-                "ticker": "CNE",
-                "sector": "Energy"
-            },
-            "17": {
-                "company": "Carton de Colombia",
-                "ticker": "CRT",
-                "sector": "Stationer"
-            },
-            "18": {
-                "company": "Carvajal Empaques",
-                "ticker": "CAR_p",
-                "sector": "Holding"
-            },
             "19": {
-                "company": "Celsia",
-                "ticker": "CEL",
-                "sector": "Energy"
+                "company": "Almacenes Éxito ",
+                "ticker": "EXITO",
+                "sector": "Retail"
             },
             "20": {
-                "company": "Cemargos",
-                "ticker": "CCB",
-                "sector": "Industrial"
+                "company": "Banco de Bogotá",
+                "ticker": "BOGOTA",
+                "sector": "Bank"
             },
             "21": {
-                "company": "Cemex Latam",
+                "company": "Gruposura (P)",
+                "ticker": "PFGRUPSURA",
+                "sector": "Bank"
+            },
+            "22": {
+                "company": "AviancaTaca (P)",
+                "ticker": "PFAVH",
+                "sector": "Aeronautics"
+            },
+            "23": {
+                "company": "Fabricato",
+                "ticker": "FABRICATO",
+                "sector": "Retail"
+            },
+            "24": {
+                "company": "Cemex Latam Holdings S.A.",
                 "ticker": "CLH",
                 "sector": "Construction"
             },
-            "22": {
-                "company": "Enka de Colombia SA",
-                "ticker": "ENK",
-                "sector": "Holding"
-            },
-            "23": {
-                "company": "Corporacion Financiera Colombiana",
-                "ticker": "CFV_p",
+            "25": {
+                "company": "Davivienda (P)",
+                "ticker": "PFDAVVNDA",
                 "sector": "Bank"
             },
-            "24": {
-                "company": "Colombiana",
-                "ticker": "CFV",
-                "sector": "Agricultural"
-            },
-            "25": {
-                "company": "Coltejer",
-                "ticker": "CTJ",
-                "sector": "Retail"
-            },
             "26": {
-                "company": "Conconcret",
-                "ticker": "CIC",
-                "sector": "Construction"
+                "company": "Banco BBVA",
+                "ticker": "BBVA",
+                "sector": "Bank"
             },
             "27": {
-                "company": "Construcciones el Condor SA",
-                "ticker": "CON",
-                "sector": "Construction"
-            },
-            "28": {
-                "company": "Ecopetrol",
-                "ticker": "ECO",
-                "sector": "Oil"
-            },
-            "29": {
-                "company": "Interconnection Electric",
-                "ticker": "ISA",
+                "company": "Celsia",
+                "ticker": "CELSIA",
                 "sector": "Energy"
             },
+            "28": {
+                "company": "Conconcreto",
+                "ticker": "CONCONCRET",
+                "sector": "Construction"
+            },
+            "29": {
+                "company": "Promigas",
+                "ticker": "PROMIGAS",
+                "sector": "Gas"
+            },
             "30": {
-                "company": "Etb",
+                "company": "Banco AV Villas",
+                "ticker": "VILLAS",
+                "sector": "Bank"
+            },
+            "31": {
+                "company": "Grupo Aval",
+                "ticker": "GRUPOAVAL",
+                "sector": "Bank"
+            },
+            "32": {
+                "company": "Empresa de Teléfonos de Bogotá",
                 "ticker": "ETB",
                 "sector": "Tech"
             },
-            "31": {
-                "company": "Fabricato SA",
-                "ticker": "FHT",
-                "sector": "Holding"
-            },
-            "32": {
-                "company": "Global X SuperDividend",
-                "ticker": "SDIV",
-                "sector": "Holding"
-            },
             "33": {
-                "company": "Grupoaval",
-                "ticker": "GAA",
-                "sector": "Bank"
-            },
-            "34": {
-                "company": "Mineros SA",
-                "ticker": "MAS",
-                "sector": "Mining"
-            },
-            "35": {
-                "company": "Nutresa",
-                "ticker": "NCH",
-                "sector": "Eating"
-            },
-            "36": {
-                "company": "Organizacion Terpel SA",
-                "ticker": "TPL",
-                "sector": "Oil"
-            },
-            "37": {
-                "company": "Pfgruposura",
-                "ticker": "SIS_p",
-                "sector": "Bank"
-            },
-            "38": {
-                "company": "Promigas",
-                "ticker": "PMG",
-                "sector": "Gas"
-            },
-            "39": {
-                "company": "Suramericana",
-                "ticker": "SIS",
-                "sector": "Bank"
+                "company": "Bolsa Mercantil de Colombia",
+                "ticker": "BMC",
+                "sector": "Holding"
             }
         }
     }

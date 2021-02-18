@@ -27,6 +27,10 @@ export class Trade {
         this.router.get('/getstock/:id', auth, this.controller.getTrade)
     }
 
+    getLastValues() {
+        this.router.get('/last', auth, this.controller.getLastValues)
+    }
+
     getTrades() {
         this.router.get('/getstocks', auth, this.controller.getTrades)
     }

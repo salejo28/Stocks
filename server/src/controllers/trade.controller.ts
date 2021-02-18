@@ -1,4 +1,5 @@
 import { Request, Response } from 'express'
+import axios from 'axios'
 
 import { connect } from '../Database'
 import { Trade } from '../interfaces/Stocks.interface'
@@ -19,6 +20,17 @@ export class TradeController {
             trade: trade[0][0]
         })
 
+    }
+
+    async getLastValues(req: Request, res: Response):Promise<Response> {
+
+        const { id } = req.user
+
+        const conn = await connect()
+
+        return res.json({
+            message: "Success"
+        })
     }
 
     async getTrades(req: Request, res: Response): Promise<Response> {
