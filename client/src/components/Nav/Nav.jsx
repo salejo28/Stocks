@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import styles from './Nav.module.css'
 
+import UserApi from '../../api/User'
+
 const Nav = () => {
 
-    return(
+    const [user, setUser] = useState({})
+    useEffect(() => {
+        async function getUser() {
+            const token = localStorage.getItem('token')
+            const res = await new UserApi().getUser(token)
+            setUser(res.data.user)
+        }
+
+        getUser()
+    }, [])
+
+    return (
         <nav className={styles.nav}>
             <div className={styles.user_info}>
                 {/* Info user */}
-                <img src="http://www.jdevoto.cl/web/wp-content/uploads/2018/04/default-user-img.jpg" alt=""/>
-                <p>Username</p>
-                <span>email@email.com</span>
+                <img src={user.imgURI} alt="" />
+                <p>{user.username}</p>
+                <span>{user.email}</span>
             </div>
             <div className={styles.nav_links}>
                 {/* Links */}
@@ -47,7 +60,7 @@ const Nav = () => {
                         </Link>
                     </li>
                 </ul>
-            </div>            
+            </div>
         </nav>
     )
 

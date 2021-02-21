@@ -54,6 +54,22 @@ main .section_table {
     margin-top: 50px;
 }
 
+main .btn {
+    position: absolute;
+    background: #264653;
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+    transition: all .5s ease;
+}
+
+main .btn:hover {
+    background: #1e3c47;
+}
+
 .btn_new {
     position: fixed;
     bottom: 30px;
@@ -136,7 +152,7 @@ main .info_content div .info_stock h4 {
 
 main .info_content div .info_stock .btn {
     width: 40%;
-    height: 90%;
+    height: 45px;
     background-color: #118ab2;
     border-radius: 5px;
     color: #fff;

@@ -44,7 +44,6 @@ export default class Stocks extends React.Component {
         let { data, loading } = this.state
         const token = localStorage.getItem('token')
         const res = await new TradeApi().getTrades(token);
-        console.log(res)
 
         data = res.data.trades
         loading = false
@@ -53,6 +52,15 @@ export default class Stocks extends React.Component {
             loading
         })
         
+    }
+
+    async updateData() {
+        this.setState({
+            loading: true
+        })
+        const token = localStorage.getItem('token')
+        await new TradeApi().getLastValue(token)
+        this.getTrades()
     }
 
     render() {
@@ -79,6 +87,12 @@ export default class Stocks extends React.Component {
                         </div>
                     ) : (
                             <main>
+                                <Button 
+                                    styles={styles}
+                                    text="Actualizar"
+                                    disabled={false}
+                                    onClick={this.updateData.bind(this)}
+                                />
                                 <section className={styles.section_table}>
                                     <Table data={data} {...this.props} />
                                 </section>

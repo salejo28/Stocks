@@ -21,8 +21,8 @@ def GetLastValue():
                               str(i)+":ns_Z7_8162H3G0K8RBE0AS52COFE0UA7_j_id30730717_1d4ebe1")
 
         array = {
-            'name': stocks_name.text.strip(),
-            'last_value': final_value.text.strip()
+            'stock': stocks_name.text.strip(),
+            'last_price': final_value.text.strip()
         }
 
         stocks.append(array)

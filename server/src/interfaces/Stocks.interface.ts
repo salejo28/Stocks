@@ -9,6 +9,7 @@ export interface Trade {
     sold: string | boolean
     total: string | number
     brokerage: string | number
+    actual_value?: string | number
     user_id: string | number
 }
 

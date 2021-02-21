@@ -52,7 +52,7 @@ export function formatDate(date) {
 }
 
 // Format price for table
-export function formatPrice(number) {
+export function formatPrice(number) {    
     const format = new Intl.NumberFormat("es-CO", {
         style: 'currency',
         currency: 'COP'

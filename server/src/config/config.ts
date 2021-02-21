@@ -10,5 +10,6 @@ export default {
     },
     token: {
         secret_key: process.env.SECRET_JWT
-    }
+    },
+    uri_scraping: process.env.URI_WEB_SCRAPING
 }

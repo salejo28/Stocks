@@ -16,6 +16,10 @@ class Trade {
         return await axios.get(this.URI + '/trade/getstocks', { headers: { 'x-token': token } })
     }
 
+    async getLastValue(token) {
+        return await axios.get(this.URI + '/trade/last', { headers: { 'x-token': token } })
+    }
+
 }
 
 export default Trade

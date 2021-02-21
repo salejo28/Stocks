@@ -13,7 +13,7 @@ const Table = (props) => {
         const stock = e.target.parentElement.childNodes[2].firstChild.data
         props.history.push(`/dashboard/stocks/${id}?stock=${stock}`)
     }
-
+    console.log(props.data)
     return (
         <div className={styles.content_table}>
             <table className={styles.table}>
@@ -50,7 +50,7 @@ const Table = (props) => {
                 </thead>
                 <tbody>
                     {
-                        props.data.map(trade => {
+                        props.data.map(trade => {                                 
                             return (
                                 <tr key={trade.id} onClick={e => onClick(e)} id={trade.id}>
                                     <td>{trade.ticker}</td>
@@ -60,8 +60,8 @@ const Table = (props) => {
                                     <td>{formatDate(trade.date_trade)}</td>
                                     <td>{formatPrice(trade.unit_price)}</td>
                                     <td>{formatPrice(trade.total)}</td>
-                                    <td>{trade.Invfinal}</td>
-                                    <td>{trade.Invactual}</td>
+                                    <td>{formatPrice(parseInt(trade.actual_value))}</td>
+                                    <td>{formatPrice(parseInt(trade.actual_value) * trade.quantity)}</td>
                                 </tr>
                             )
                         })

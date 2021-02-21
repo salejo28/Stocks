@@ -49,6 +49,12 @@ export default class Stock extends React.Component {
         }
     }
 
+    async getLastValue() {
+        const token = localStorage.getItem('token')
+        await new TradeApi().getLastValue(token)
+        this.getStock()
+    }
+
     sellStocks() {
         console.log('Sold')
     }
@@ -99,13 +105,14 @@ export default class Stock extends React.Component {
                             </div>
                             <div className={styles.info_stock}>
                                 <h2>Valor actual:</h2>
-                                <h4>{/* formatPrice(stock.actual_value) */stock.actual_value}</h4>
+                                <h4>{formatPrice(stock.actual_value)}</h4>
                             </div>
                             <div className={styles.info_stock}>
                                 <Button 
                                     text="Actualizar datos"
                                     styles={styles}
                                     disabled={false}
+                                    onClick={this.getLastValue.bind(this)}
                                 />
                             </div>
                             <div className={styles.info_stock}>

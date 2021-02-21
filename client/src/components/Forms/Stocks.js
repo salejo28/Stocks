@@ -119,8 +119,7 @@ export default class StocksForm extends React.Component {
 
     async onSubmit(e, args) {
         e.preventDefault()
-        args['color'] = randomColor()
-        console.log(args)
+        args['color'] = randomColor()       
         const token = localStorage.getItem('token')
         const res = await new TradeApi().createTrade(args, token)
         const { success } = res.data

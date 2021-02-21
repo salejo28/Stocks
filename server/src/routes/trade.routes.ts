@@ -17,6 +17,7 @@ export class Trade {
         this.getTrades()
         this.deleteTrade()
         this.updateTrade()
+        this.getLastValues()
     }
 
     createTrade() {
